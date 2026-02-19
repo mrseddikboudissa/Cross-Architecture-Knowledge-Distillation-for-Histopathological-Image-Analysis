@@ -1,5 +1,23 @@
+# Python
 __pycache__/
 *.pyc
-checkpoints/
+
+# Environments
 .env
+.venv
+
+# Data
+data/
+*.jpg
+*.png
+
+# Models
+*.pth
+checkpoints/
+results/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
 .DS_Store

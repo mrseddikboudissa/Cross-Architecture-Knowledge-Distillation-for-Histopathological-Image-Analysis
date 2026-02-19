@@ -1,14 +1,16 @@
 seed: 42
 
 data:
+  root: /home-asustor/seddik/modelsineed/secondjournal/data_split_images_non_augmented
   image_size: 224
   batch_size: 32
   num_workers: 4
 
 model:
   teacher: resnet50
-  student: vit_small
+  student: vit_b_16
   pretrained: true
+  num_classes: 8
 
 training:
   epochs: 5
@@ -18,3 +20,7 @@ training:
 
 output:
   checkpoint_dir: checkpoints/warmup
+
+inference:                # ✅ NEW SECTION
+  model_path: /home-asustor/seddik/modelsineed/secondjournal/resultsimagewise8classes/vitbaseFULLYfinetuned-50epchsfasterLR-ADAMW-augmentedwithLEAKAGEDATA2.0/best_model.pth
+  device: cuda
