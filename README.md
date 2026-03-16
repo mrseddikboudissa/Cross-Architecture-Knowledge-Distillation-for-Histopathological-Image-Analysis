@@ -3,3 +3,5 @@
 This repository implements adaptive knowledge distillation for vision models
 using representation similarity (CKA, KCCA) to dynamically match teacher and
 student layers.
+
+![Pipeline](secondjourrnalmethod.drawio.png)
